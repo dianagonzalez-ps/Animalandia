@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+}
+:root{
+    --dark-color:#191919;
+    --white-color:#FFFFFF; 
+    --purple-color:rgb(117,41,149);
+    --blue-color:#00b2b1;
+    --gray-color:#828288;
+    --ligh-color:#f3f3f3;    
+}
+
+h1,h2,h3{
+    font-family:'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/*Estilos Home*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background: linear-gradient(#00B2B1,#016E6E);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.b-azul:hover{
+    background: linear-gradient(#016E6E,#00B2B1);
+    transition: all 1s ease 1s;
+}
+
+.b-morado{
+    background: var(--white-color);
+    border-radius: 5px;
+    border-color: var(--purple-color);
+    border-style: solid;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+
+.b-morado:hover{
+    background-color: var(--purple-color);
+    color:var(--white-color)
+}
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+}
+
+.item{
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid var(--white-color);
+}
+
+#agenda{
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image: url(../img/fondo.jpg);
+    padding: 2rem;
+}
+
+.cita h1{
+    color:var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cita h3{
+    color:var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color); 
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+}
+
+.tsection{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#servicios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+}
+
+footer{
+    background-image:url(../img/fondo.jpg);
+
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(117,41,149,0.4);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3{
+    color: var(--white-color);  
+}
+
+.foot p{
+    color: var(--white-color);  
+}
+
+/*---------Equipo---------*/
+
+.banner img{
+    width: 100%;
+}
+
+.tsection{
+
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#n-equipo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.veterinarian{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.veterinarian img{
+    width: 180px;
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+    margin: 5px
+    
+}
+.veterinarian h3{
+    font-size: 20px;
+    font-weight:1000;
+    
+
+}
+.veterinarian h4{
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px var(--dark-color);
+}
+
+.veterinarian p{
+    text-align:center;
+
+}
+
+/*----------Servicios------------*/
+
+#banner2 img{
+    width: 100%;
+}
+
+#services{
+    display: flex;
+}
+
+.service{
+    display: flex;
+}
+
+.img-service{
+    margin: 2em;
+}
+
+.text-service h3{
+    color: var(--dark-color);
+    font-size: 24px;
+
+}
+
+.sesion{
+    
+}
+.sesion img{
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--blue-color);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    cursor: pointer;
+}
+
+#dashboard{
+    display: flex;
+}
+
+.menu1{
+    flex-basis: 20%;
+    background-color: var(--dark-color);
+    height: 100vh
+}
+
+.menu1 ul{
+    list-style: none;
+    padding: 0.2;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu1 a{
+    color: var(--ligh-color);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.menu1 a:hover{
+    background-color: var(--purple-color);
+    color: var(--dark-color);
+    
+
+
+
+}
+.item1{
+
+}
+
+.contenido{
+
+}
