@@ -235,14 +235,25 @@ footer{
 
 #services{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2em;
 }
 
 .service{
     display: flex;
+    flex-basis: 45%;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.service img{
+    max-width: 100px;
 }
 
 .img-service{
     margin: 2em;
+   
 }
 
 .text-service h3{
