@@ -270,10 +270,8 @@ footer{
     border-radius: 50%;
 
 }
-
 #cards{
     padding: 2em;   
-    
 }
 
 .card{
@@ -284,7 +282,6 @@ footer{
 .card img{
     margin: 5px;
     width: 350px;
-
 }
 
 #contact{
@@ -293,6 +290,8 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-wrap: wrap;
+
 }
 
 .form-contact h1{
